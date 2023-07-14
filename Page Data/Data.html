@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CEK DATA KAMU</title>
+    <link rel="stylesheet" href="/Page Data/Data.css" />
+    <link rel="shortcut icon" href="/images/Logo Transparan.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title" style="text-align: center">DATA PENDAFTAR OSBIT 9.0</div>
+      <div class="content">
+        <form name="#">
+          <div id="form_alerts"></div>
+          <div class="user-details">
+            <label for="sheetdb-id" class="form-label"></label>
+            <input for="sheetdb-id" type="text" name="ID" class="form-control" placeholder="Masukan 6 digit ID" />
+            <a href="/Page Daftar/Daftar.html" class="cariid">Kembali</a>
+            <button type="submit" type="button" class="cariid">Cari Data</button>
+          </div>
+          <div data-sheetdb-url="https://sheetdb.io/api/v1/ae0nr5nwijvzg" data-sheetdb-limit="1" data-sheetdb-sheet="DATA" data-sheetdb-query-string="ID" class="hasilData">
+            <p class="satu">Nama Lengkap : {{NAMA_LENGKAP}}</p>
+            <br />
+            <p>Jenis Kelamin : {{JENIS_KELAMIN}}</p>
+            <br />
+            <p>Kelas : {{KELAS}}</p>
+            <br />
+            <p>Kontak : {{KONTAK}}</p>
+            <br />
+            <p>Alamat : {{ALAMAT}}</p>
+            <br />
+            <p>Jurusan : {{JURUSAN}}</p>
+            <br />
+            <p>ID : {{ID}}</p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://sheetdb.io/handlebars.js"></script>
+  </body>
+</html>
